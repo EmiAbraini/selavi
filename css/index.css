@@ -305,7 +305,7 @@ img {
 .footer-mobile {
   display: none;
   height: 220px;
-  padding-bottom: 18px;
+  padding-bottom: 25px;
   font-size: 12px;
 }
 
@@ -424,8 +424,8 @@ img {
   }
 
   .showcase-content {
-    top: 80%;
-    left: 40%;
+    top: 40%;
+    left: 50%;
   }
 
   .main-title span {
