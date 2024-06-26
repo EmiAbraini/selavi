@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: 'Albra';
-  src: url('fonts/AlbraSansTRIAL-Regular.otf') format('truetype');
+  src: url('fonts/AlbraSansTRIAL-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Albra Italic';
-  src: url('fonts/AlbraTRIAL-Regular-Italic.otf') format('truetype');
+  src: url('fonts/AlbraTRIAL-Regular-Italic.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
