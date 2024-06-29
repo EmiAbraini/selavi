@@ -29,7 +29,8 @@
 }
 
 body {
-  font-family: 'Albra', sans-serif;
+  /* font-family: 'Albra', sans-serif; */
+  font-family: "Inter", sans-serif;
   color: var(--secondary-color);
   line-height: 1.6;
   background-color: var(--primary-color);
