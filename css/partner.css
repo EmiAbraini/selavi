@@ -69,20 +69,20 @@ a:hover{
   box-sizing: border-box;
 }
 
+.adv-container .error-code {
+  margin-top: 20px;
+}
+
 @keyframes marquee {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
-}
-
-.adv-container .error-code {
-  margin-top: 20px;
 }
 
 /* Footer */
 .footer {
   flex: 0 1 auto;
   height: 150px;
-  font-family: "Albra";
+  font-family: 'Albra', sans-serif;
   font-size: 14px;
   padding-bottom: 25px;
   color: var(--secondary-color);
@@ -91,10 +91,12 @@ a:hover{
 
 .footer-mobile {
   display: none;
+  height: 220px;
   color: var(--secondary-color);
   background-color: var(--primary-color);
   padding-bottom: 25px;
   font-size: 12px;
+  font-family: 'Albra', sans-serif;
 }
 
 .footer p, .footer-mobile p {
@@ -147,14 +149,6 @@ a:hover{
 
   .logo-container h3 {
     font-size: 20px;
-  }
-
-  .menu-items {
-    display: none;
-  }
-
-  .menu-items-mobile {
-    display: block;
   }
 
   .footer {

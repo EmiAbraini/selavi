@@ -1,5 +1,6 @@
 body {
   cursor: none;
+  font-family: 'Albra', sans-serif;
 }
 
 a {
@@ -99,13 +100,13 @@ a:hover{
 .footer {
   flex: 0 1 auto;
   height: 150px;
-  font-family: "Albra";
   font-size: 14px;
   padding-bottom: 25px;
 }
 
 .footer-mobile {
   display: none;
+  height: 220px;
   padding-bottom: 25px;
   font-size: 12px;
 }
