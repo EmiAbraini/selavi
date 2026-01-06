@@ -6,11 +6,13 @@
   --bs-primary-rgb: 167, 157, 205;
   --bs-dark: #0E1214;
   --bs-dark-rgb: 14, 18, 20;
+  --bs-light: #F4F4F4;
+  --bs-light-rgb: 244, 244, 244;
 
   --bs-body-bg: var(--bs-dark);
   --bs-body-bg-rgb: var(--bs-dark-rgb);
-  --bs-body-color: #F4F4F4;
-  --bs-body-color-rgb: 244, 244, 244;
+  --bs-body-color: var(--bs-light);
+  --bs-body-color-rgb: var(--bs-light-rgb);
 
   --bs-font-sans-serif: "aktiv-grotesk", sans-serif;
   --bs-body-font-family: "aktiv-grotesk", sans-serif;
@@ -56,8 +58,26 @@ small, .small{
   box-shadow: none;
 }
 
+.btn-link{
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-hover-color: rgba(var(--bs-primary-rgb), .6);
+  --bs-btn-active-color: var(--bs-primary);
+  --bs-link-color-rgb: var(--bs-primary-rgb);
+  --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+}
+
 .gap-6{
   gap: 8rem !important;
+}
+
+.form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
+}
+
+.form-control::placeholder {
+  color: var(--bs-body-color);
+  opacity: .5;
 }
 
 @media (max-width: 991.98px){
