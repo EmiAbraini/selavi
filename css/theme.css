@@ -57,7 +57,7 @@ small, .small{
 }
 
 .gap-6{
-  gap: 6rem !important;
+  gap: 8rem !important;
 }
 
 @media (max-width: 991.98px){
