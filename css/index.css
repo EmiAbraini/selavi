@@ -5,10 +5,15 @@ ul {
 a {
   text-decoration: none;
   color: var(--secondary-color);
+  font-family: "Antic Didone", serif;
 }
 
 a:hover{
   text-decoration: underline;
+}
+
+h3 {
+  font-family: "aktiv-grotesk", sans-serif;
 }
 
 p {

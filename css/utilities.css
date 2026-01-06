@@ -1,18 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-@font-face {
-  font-family: 'Albra';
-  src: url('fonts/AlbraSansTRIAL-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Albra Italic';
-  src: url('fonts/AlbraTRIAL-Regular-Italic.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 :root {
   --primary-color: #323031;
@@ -29,7 +15,8 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  /* font-family: "Antic Didone", serif; */
+  font-family: "aktiv-grotesk", sans-serif;
   color: var(--secondary-color);
   line-height: 1.6;
   background-color: var(--primary-color);
