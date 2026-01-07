@@ -12,8 +12,6 @@
     defer
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     ></script>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
     <link rel="stylesheet" href="/css/theme.css">
     <link rel="stylesheet" href="/css/mania.css">
@@ -33,45 +31,55 @@
                 <img src="/images/logo.svg" alt="logo" height="40">
             </a>
 
-            <button class="navbar-toggler border-0 bg-transparent p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0 p-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- menu -->
-            <div class="collapse navbar-collapse pt-3 pt-lg-0 justify-content-lg-between align-items-lg-center" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item p-0">
-                        <a class="nav-link h4 text-uppercase m-0" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link h4 text-uppercase m-0" aria-current="page" href="brand.html">Brand</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active h4 text-uppercase m-0" aria-current="page" href="mania.html">Mania</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav flex-row gap-2 gap-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-sm"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" aria-label="Twitter"><i class="fab fa-twitter fa-sm"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://youtube.com" target="_blank" aria-label="youtube"><i class="fab fa-youtube fa-sm"></i></a>
-                    </li>
-                </ul>
+            <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="navbarNavDropdown">
+
+                <div class="offcanvas-header d-lg-none">
+                    <h5 class="offcanvas-title">
+                        <img src="/images/logo.svg" alt="logo" height="40">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body justify-content-lg-between align-items-lg-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item p-0">
+                            <a class="nav-link h4 text-uppercase m-0" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h4 text-uppercase m-0" aria-current="page" href="brand.html">Brand</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active h4 text-uppercase m-0" aria-current="page" href="mania.html">Mania</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-row gap-2 gap-lg-0 mt-4 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-sm"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-label="Twitter"><i class="fab fa-twitter fa-sm"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://youtube.com" target="_blank" aria-label="youtube"><i class="fab fa-youtube fa-sm"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- hero -->
-    <div class="container-fluid p-0 d-flex flex-column justify-content-center" style="height: 100vh; background-image: url('images/mania-hero.png'); background-size: cover; background-position: bottom;">
+    <div class="container-fluid p-0 d-flex flex-column justify-content-center" style="height: 70vh; background-image: url('images/mania-hero.png'); background-size: cover; background-position: bottom;">
         <img src="images\mania-scritta.png" class="w-100" style="mix-blend-mode: plus-lighter;">
     </div>
 
     <!-- section -->
-    <div class="container-fluid d-flex flex-column gap-6">
+    <div class="container-fluid d-flex flex-column gap-6 p-0">
 
         <div class="container-xxl">
             <div class="row justify-content-center">
@@ -81,27 +89,17 @@
                 </div> 
             </div>
         </div>
-
+        
         <div class="container-xxl">
-            <div class="splide" id="image-slider">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="images/mania1.png" alt="Image 1" style="height: 35vh; width: auto; object-fit: contain;">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="images/mania2.png" alt="Image 2" style="height: 35vh; width: auto; object-fit: contain;">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="images/mania4.png" alt="Image 4" style="height: 35vh; width: auto; object-fit: contain;">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="images/mania5.png" alt="Image 5" style="height: 35vh; width: auto; object-fit: contain;">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="images/mania6.png" alt="Image 6" style="height: 35vh; width: auto; object-fit: contain;">
-                        </li>
-                    </ul>
+            <div class="row justify-content-center g-3">
+                <div class="col-10 col-md-4 d-flex d-md-block justify-content-center">
+                    <img src ="images/mania1.png" class="img-fluid">
+                </div>
+                <div class="col-10 col-md-4 d-flex d-md-block justify-content-center">
+                    <img src ="images/mania5.png" class="img-fluid">
+                </div>
+                <div class="col-10 col-md-4 d-flex d-md-block justify-content-center">
+                    <img src ="images/mania6.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -112,11 +110,11 @@
                     <h2>Still life</h2>
                 </div> 
                 <div class="col-10 col-md-8 text-center">
-                    <p class="fst-italic">“Dimenticati, abbandonati ai silenzi della polvere, gli oggetti dormono nel respiro sospeso del tempo. Fermi come sentinelle d'epoche lontane, custodi invisibili di memorie che non hanno più voce. Nelle loro crepe si annida il battito di istanti passati, un eco fragile che sussurra al buio. 
-                        Sono frammenti di vite, di sogni che li hanno attraversati e poi smarriti. Eppure basta uno sguardo, una luce obliqua che ne accarezza la superficie, perché tornino a vibrare. Rinascono allora come fiori notturni, svelando segreti che il tempo non ha saputo cancellare. Gli oggetti dimenticati non muoiono: aspettano soltanto una nuova luce per ricominciare a raccontare”</p>
+                    <p class="fst-italic">“ Dimenticati, abbandonati ai silenzi della polvere, gli oggetti dormono nel respiro sospeso del tempo. Fermi come sentinelle d'epoche lontane, custodi invisibili di memorie che non hanno più voce. Nelle loro crepe si annida il battito di istanti passati, un eco fragile che sussurra al buio. 
+                        Sono frammenti di vite, di sogni che li hanno attraversati e poi smarriti. Eppure basta uno sguardo, una luce obliqua che ne accarezza la superficie, perché tornino a vibrare. Rinascono allora come fiori notturni, svelando segreti che il tempo non ha saputo cancellare. Gli oggetti dimenticati non muoiono: aspettano soltanto una nuova luce per ricominciare a raccontare ”</p>
                 </div> 
                 <div class="col-10 col-md-8 text-center">
-                    <p class="text-uppercase">Mario Rossi, fotografo di still life</p>
+                    <p class="text-uppercase small">Mario Rossi, fotografo di still life</p>
                 </div> 
             </div>
         </div>
@@ -238,31 +236,19 @@
         </div>
     </footer>
 
-    <!-- Splide JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const splide = new Splide('#image-slider', {
-            type: 'loop',
-            drag: true,
-            focus: 'center',
-            perPage: 3,
-            gap: '2rem',
-            pagination: true,
-            arrows: true,
-            breakpoints: {
-                1200: { perPage: 3, gap: '2rem' },
-                768:  { perPage: 2, gap: '1rem' },
-                480:  { perPage: 1, gap: '0.5rem' },
-            },
-            }).mount();
-
-            let t;
-            window.addEventListener('resize', () => {
-            clearTimeout(t);
-            t = setTimeout(() => splide.refresh(), 100);
-            });
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeButton = document.querySelector('.btn-close');
+            const offcanvasElement = document.getElementById('navbarNavDropdown');
+            
+            if (closeButton && offcanvasElement) {
+                closeButton.addEventListener('click', function() {
+                    const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+                    if (bsOffcanvas) {
+                        bsOffcanvas.hide();
+                    }
+                });
+            }
         });
     </script>
 

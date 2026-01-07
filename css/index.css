@@ -2,10 +2,7 @@
   height: 50vh;
   width: 100%;
 
-  background:
-    linear-gradient(180deg, #0E1214 0.03%, rgba(14, 18, 20, 0) 46.63%),
-    linear-gradient(180deg, rgba(14, 18, 20, 0) 22.42%, #0E1214 100%),
-    url("/images/home4.png");
+  background: url("/images/home4-576.png");
 
   background-repeat: no-repeat;
   background-position: center;
@@ -19,4 +16,22 @@
   background:
     linear-gradient(180deg, #0E1214 0.03%, rgba(14, 18, 20, 0) 46.63%),
     linear-gradient(180deg, rgba(14, 18, 20, 0) 22.42%, #0E1214 100%);
+}
+
+@media (min-width: 576px) {
+    .hero-parallax {
+        background-image: url("/images/home4-768.png");
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-parallax {
+        background-image: url("/images/home4-992.png");
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-parallax {
+        background-image: url("/images/home4-1200.png");
+    }
 }

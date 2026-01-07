@@ -15,7 +15,7 @@
   --bs-body-color-rgb: var(--bs-light-rgb);
 
   --bs-font-sans-serif: "aktiv-grotesk", sans-serif;
-  --bs-body-font-family: "aktiv-grotesk", sans-serif;
+  --bs-body-font-family: "aktiv-grotesk-thin", sans-serif;
 
   --bs-body-font-size: 1.125rem; /* 18px */
   --bs-body-line-height: 1.3; /* ~24 */
@@ -54,7 +54,7 @@ small, .small{
   --bs-navbar-brand-color: var(--bs-body-color);
 }
 
-.navbar .navbar-toggler:focus{
+.navbar .navbar-toggler:focus, .btn-close:focus {
   box-shadow: none;
 }
 
@@ -80,11 +80,15 @@ small, .small{
   opacity: .5;
 }
 
+@media (max-width: 576px) {
+  .offcanvas-lg {
+    width: 100vw;
+  }
+}
 
-
-@media (max-width: 991.98px){
-  #navbarNavDropdown{
-    min-height: 100vh;
+@media (min-width: 992px) {
+  .offcanvas-lg {
+    width: 100vw;
   }
 }
 
