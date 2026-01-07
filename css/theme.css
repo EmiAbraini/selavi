@@ -80,6 +80,8 @@ small, .small{
   opacity: .5;
 }
 
+
+
 @media (max-width: 991.98px){
   #navbarNavDropdown{
     min-height: 100vh;
