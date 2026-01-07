@@ -242,31 +242,29 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            new Splide('#image-slider', {
-                type: 'loop',
-                drag: 'free',
-                focus: 'center',
-                perPage: 3,
-                gap: '2rem',
-                pagination: true,
-                arrows: true,
-                breakpoints: {
-                    1200: {
-                        perPage: 3,
-                        gap: '2rem',
-                    },
-                    768: {
-                        perPage: 2,
-                        gap: '1rem',
-                    },
-                    480: {
-                        perPage: 1,
-                        gap: '0.5rem',
-                    }
-                }
+        document.addEventListener('DOMContentLoaded', function () {
+            const splide = new Splide('#image-slider', {
+            type: 'loop',
+            drag: true,
+            focus: 'center',
+            perPage: 3,
+            gap: '2rem',
+            pagination: true,
+            arrows: true,
+            breakpoints: {
+                1200: { perPage: 3, gap: '2rem' },
+                768:  { perPage: 2, gap: '1rem' },
+                480:  { perPage: 1, gap: '0.5rem' },
+            },
             }).mount();
+
+            let t;
+            window.addEventListener('resize', () => {
+            clearTimeout(t);
+            t = setTimeout(() => splide.refresh(), 100);
+            });
         });
     </script>
+
 </body>
 </html>
