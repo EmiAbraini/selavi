@@ -17,7 +17,7 @@
 
   --bs-body-font-size: 1.125rem; /* 18px */
   --bs-body-line-height: 1.3; /* ~24 */
-  --bs-body-font-weight: 400;
+  --bs-body-font-weight: 200;
 }
 
 html, body { 
