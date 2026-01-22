@@ -5,7 +5,7 @@
   --bs-primary-rgb: 167, 157, 205;
   --bs-dark: #0E1214;
   --bs-dark-rgb: 14, 18, 20;
-  --bs-light: #F4F4F4;
+  --bs-light: #F5f5f5;
   --bs-light-rgb: 244, 244, 244;
 
   --bs-body-bg: var(--bs-dark);
@@ -16,12 +16,12 @@
   --bs-font-sans-serif: "Varta", sans-serif;
   --bs-body-font-family: "Varta", sans-serif;
 
-  --bs-body-font-size: 1rem; /* 16px */
-  --bs-body-line-height: 1.4; /* 18 */
+  --bs-body-font-size: 1.125rem; /* 18px */
+  --bs-body-line-height: 1.5rem; /* 24px */
   --bs-body-font-weight: 200;
 }
 
-html, body { 
+html, body, p { 
   margin: 0; 
   padding: 0; 
 }
@@ -55,6 +55,12 @@ small, .small{
 
 .navbar .navbar-toggler:focus, .btn-close:focus {
   box-shadow: none;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-link{

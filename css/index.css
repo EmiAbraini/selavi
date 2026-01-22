@@ -11,9 +11,17 @@
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
 }
+
+/* .hero-parallax {
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+} */
 
 .sfumatura {
   height: 100%;
@@ -34,16 +42,23 @@
     }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 768) {
 
     .hero-parallax {
         background-image: url("/images/home4-768.png");
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
 
     .hero-parallax {
         background-image: url("/images/home4-992.png");
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .hero-parallax {
+        background-image: url("/images/home4-1200.png");
     }
 }
