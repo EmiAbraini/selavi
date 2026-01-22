@@ -57,7 +57,7 @@ small, .small{
   box-shadow: none;
 }
 
-.nav-link {
+.social-link {
   display: flex;
   align-items: center;
   justify-content: center;
