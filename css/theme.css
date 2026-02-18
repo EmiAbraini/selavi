@@ -16,7 +16,7 @@
   --bs-font-sans-serif: "Varta", sans-serif;
   --bs-body-font-family: "Varta", sans-serif;
 
-  --bs-body-font-size: 1.125rem; /* 18px */
+  --bs-body-font-size: 1.125rem; /* 16px*1.125 = 18px */
   --bs-body-line-height: 1.5rem; /* 24px */
   --bs-body-font-weight: 200;
 }
@@ -90,9 +90,6 @@ small, .small{
 }
 
 @media (max-width: 576px) {
-  .offcanvas-lg {
-    width: 100vw;
-  }
 
   .gap-6{
     gap: 5rem;
@@ -104,12 +101,6 @@ small, .small{
     font-size: 2rem;
     line-height: 1.2;
     font-weight: 400;
-  }
-}
-
-@media (min-width: 992px) {
-  .offcanvas-lg {
-    width: 100vw;
   }
 }
 
