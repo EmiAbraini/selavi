@@ -38,7 +38,7 @@
                 </button>
 
                 <!-- menu -->
-                <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="navbarNavDropdown">
+                <div class="offcanvas offcanvas-lg offcanvas-end" tabindex="-1" id="navbarNavDropdown">
 
                     <div class="offcanvas-header d-lg-none">
                         <h5 class="offcanvas-title">
@@ -195,20 +195,5 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const closeButton = document.querySelector('.btn-close');
-            const offcanvasElement = document.getElementById('navbarNavDropdown');
-            
-            if (closeButton && offcanvasElement) {
-                closeButton.addEventListener('click', function() {
-                    const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
-                    if (bsOffcanvas) {
-                        bsOffcanvas.hide();
-                    }
-                });
-            }
-        });
-    </script>
 </body>
 </html>
